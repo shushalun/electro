@@ -299,7 +299,7 @@ a {
 }
 @media (min-width: 1024px) {
   .main-nav__list {
-    top: 94px;
+    top: 80px;
   }
 }
 @media (min-width: 1200px) {
