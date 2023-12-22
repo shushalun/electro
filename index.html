@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Katuška elektro - salón elektroepilace</title>
+      <link href="./css/style.css" rel="stylesheet">
+      <link rel="preload" href="./fonts/Uto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="./fonts/BonaNova-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="./fonts/BonaNova-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <!-- Ссылка на фавикон -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+          <a class="header__logo" href="https://instagram.com/katuska_electro?igshid=NzZlODBkYWE4Ng==">@katuska_electro</a>
+        <nav class="header__navigation main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Menu">
+            <span class="visually-hidden">Menu</span>
+            <span class="main-nav__burger-line"></span>
+          </button>
+          <ul class="main-nav__list style-list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#offer">Offers</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#reservation">Reservation</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#faq">FAQ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#cz">CZ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="hero">
+        <div class="wrapper">
+          <h1 class="hero__title">THE ONLY PERMANENT HAIR REMOVAL METHOD</h1>
+          <p class="hero__text">/with a guarantee and results</p>
+          <a href="#reservation" class="hero__reservation-button">RESERVATION</a>
+        </div>
+      </section>
+      <section class="offer" id="offer">
+        <div class="wrapper">
+          <h2 class="offer__title">OFFER<span class="offer__title--zone">/zone/</span></h2>
+          <div class="offer__container">
+            <div class="offer__item">
+              <picture class="offer__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/leg-wax-desktop.webp 1x, ./img/leg-wax-desktop@2x.webp 2x" width="300" height="240">
+                <source type="image/webp" media="(min-width: 660px)" srcset="./img/leg-wax-tablet.webp 1x, ./img/leg-wax-tablet@2x.webp 2x" width="300" height="200">
+                <source type="image/webp" srcset="./img/leg-wax.png" srcset="./img/leg-wax@2x.png 2x" width="203" height="146">
+                <source media="(min-width: 1200px)" srcset="./img/leg-wax-desktop.png 1x, ./img/leg-wax-desktop@2x.png 2x" width="300" height="240">
+                <source media="(min-width: 660px)" srcset="./img/leg-wax-tablet.png 1x, ./img/leg-wax-tablet@2x.png 2x" width="300" height="200">
+                <img class="offer__img" src="./img/leg-wax.png" srcset="./img/leg-wax@2x.png 2x" width="203" height="146" alt="Leg waxing">
+              </picture>
+              <div class="offer__box">
+                <h3 class="offer__item-title">WAXING DEPILATION</h3>
+                <a class="offer__item-link" href="#reasons">read more</a></div>
+              </div>
+            <div class="offer__item">
+              <picture class="offer__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/face-electro-desktop.webp 1x, ./img/face-electro-desktop@2x.webp 2x" width="300" height="240">
+                <source type="image/webp" media="(min-width: 660px)" srcset="./img/face-electro-tablet.webp 1x, ./img/face-electro-tablet@2x.webp 2x" width="300" height="200">
+                <source type="image/webp" srcset="./img/face-electro.webp" srcset="./img/face-electro@2x.webp 2x" width="203" height="146">
+                <source media="(min-width: 1200px)" srcset="./img/face-electro-desktop.png 1x, ./img/face-electro-desktop@2x.png 2x" width="300" height="240">
+                <source media="(min-width: 660px)" srcset="./img/face-electro-tablet.png 1x, ./img/face-electro-tablet@2x.png 2x" width="300" height="200">
+                <img class="offer__img" src="./img/face-electro.png" srcset="./img/face-electro@2x.png 2x" width="203" height="146" alt="Face electroepilation">
+              </picture>
+              <div class="offer__box offer__box--electro">
+                <h3 class="offer__item-title">ELECTRO-EPILATION</h3>
+                <a class="offer__item-link" href="#waxing">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer__triangle"></div>
+      </section>
+      <section class="reasons" id="reasons">
+        <div class="wrapper">
+          <h2 class="reasons__title">REASONS TO CHOOSE ELECTROEPILATION</h2>
+          <div class="reasons__container">
+            <ul class="reasons__list style-list">
+              <li class="reasons__item"><span class="reasons__text--bold">Permanent result:</span> This method guarantees complete hair removal as it destroys the hair follicle.</li>
+              <li class="reasons__item"><span class="reasons__text--bold">Removes any hair:</span> regardless of its structure or colour - downy, grey, red, thick and thin.</li>
+              <li class="reasons__item"><span class="reasons__text--bold">Ideal for different areas:</span> it is a jewellery technique - each hair is removed individually. Hair can be removed absolutely anywhere, including single hairs on the face.</li>
+            </ul>
+            <picture class="reasons__box">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/reasons-electro-desktop.webp 1x, ./img/reasons-electro-desktop@2x.webp 2x" width="350" height="350">
+              <source type="image/webp" srcset="./img/reasons-electro.webp" srcset="./img/reasons-electro@2x.webp 2x" width="320" height="320">
+              <source media="(min-width: 1200px)" srcset="./img/reasons-electro-desktop.png 1x, ./img/reasons-electro-desktop@2x.png 2x" width="350" height="350">
+              <img class="reasons__img" src="./img/reasons-electro.png" srcset="./img/reasons-electro@2x.png 2x" width="320" height="320" alt="Master Katya do face-electroepilation">
+            </picture>
+          </div>
+        </div>
+        <div class="reasons__triangle"></div>
+      </section>
+      <section class="reasons reasons--waxing" id="waxing">
+        <div class="wrapper">
+        <h2 class="reasons__title">REASONS TO CHOOSE WAXING</h2>
+        <div class="reasons__container">
+          <ul class="reasons__list style-list">
+            <li class="reasons__item"><span class="reasons__text--bold">Long-lasting effect:</span> Removes hair from the root, ensuring smoothness for a longer period than shaving.</li>
+            <li class="reasons__item"><span class="reasons__text--bold">Effective removal:</span> Treats a large area of skin at a time, making the process faster.</li>
+            <li class="reasons__item"><span class="reasons__text--bold">Cost:</span> Waxing is cheaper than electro-epilation, but allows you to feel smooth for up to 3 weeks.</li>
+          </ul>
+            <picture class="reasons__box">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/reasons-wax-desktop.webp 1x, ./img/reasons-wax-desktop@2x.webp 2x" width="350" height="350">
+              <source type="image/webp" srcset="./img/reasons-wax.webp" srcset="./img/reasons-wax@2x.webp 2x" width="320" height="320">
+              <source media="(min-width: 1200px)" srcset="./img/reasons-wax-desktop.png 1x, ./img/reasons-wax-desktop@2x.png 2x" width="350" height="350">
+              <img class="reasons__img" src="./img/reasons-wax.png" srcset="./img/reasons-wax@2x.png 2x" width="320" height="320" alt="Master Katya do face-electroepilation">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="click-and-save" id="click-and-save">
+        <div class="wrapper">
+          <div class="click-and-save__box">
+            <h2 class="click-and-save__title">CLICK AND SAVE:</h2>
+            <p class="click-and-save__offer">10% FOR FIRST WAXING SESSION, 5% FOR EVERY MARK!</p>
+            <a href="#reservation" class="click-and-save__reservation-button">MAKE A RESERVATION</a>
+          </div>
+        </div>
+      </section>
+      <section class="sterilisation" id="sterilisation">
+        <div class="wrapper">
+          <h2 class="sterilisation__title">STERILISATION <span class="sterilisation__title--zone">/zone/</span></h2>
+          <ol class="sterilisation__list style-list">
+            <li class="sterilisation__list-item">
+              <p class="sterilisation__step">step 1</p>
+              <p class="sterilisation__desc">The tweezers are sent to a special solution after each use.</p>
+            </li>
+            <li class="sterilisation__list-item">
+              <p class="sterilisation__step">step 2</p>
+              <p class="sterilisation__desc">Afterwards it is washed with a special brush under running water.</p>
+            </li>
+            <li class="sterilisation__list-item">
+              <p class="sterilisation__step">step 3</p>
+              <p class="sterilisation__desc">Тhe forceps are sent to dry naturally for up to 5 hours.</p>
+            </li>
+            <li class="sterilisation__list-item">
+              <p class="sterilisation__step">step 4</p>
+              <p class="sterilisation__desc">The instruments are packed in kraft bags and sterilised by dry hot air heated to a temperature of 180°C for 60 minutes.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="wrapper">
+          <h2 class="faq__title">FREQUENTLY ASKED QUESTIONS</h2>
+          <dl class="faq__list">
+            <div class="faq__item">
+              <dt class="faq__question">Is electroepilation painful?</dt>
+              <dd class="faq__answer">The level of pain can vary depending on individual skin sensitivity. Many people describe the sensation as a slight tingling. Using numbing creams or gels can help reduce discomfort.</dd>
+            </div>
+            <div class="faq__item">
+              <dt class="faq__question">How much time does one electroepilation session typically take?</dt>
+              <dd class="faq__answer">The duration of an electroepilation session depends on the area being treated. For example, removing hair from the upper lip may take only a few minutes, while treating the legs might take an hour or more.</dd>
+            </div>
+            <div class="faq__item">
+              <dt class="faq__question">How should I prepare for an electroepilation session?</dt>
+              <dd class="faq__answer">It is recommended to have hair in the targeted area not too short. Avoid sunburn and self-tanning products before the procedure. Also, refrain from using creams or oils on the skin prior to the session</dd>
+            </div>
+            <div class="faq__item">
+              <dt class="faq__question">How often should I undergo electroepilation to achieve the best results?</dt>
+              <dd class="faq__answer">The recommended frequency can vary, but typically starting with sessions every one or two weeks is advised, gradually spacing them out as hair growth diminishes.</dd>
+            </div>
+            <div class="faq__item">
+              <dt class="faq__question">What are the contraindications for electroepilation?</dt>
+              <dd class="faq__answer">Electroepilation is not recommended for pregnant women, individuals with serious skin conditions, and those with metal implants in the treatment area.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="wrapper">
+          <div class="portfolio__content">
+            <h2 class="portfolio__title">PORTFOLIO</h2>
+            <div class="portfolio__container">
+              <picture class="portfolio__item">
+                <source srcset="./img/portfolio-eng-1.webp" data-miniature-id="1" width="315" height="145">
+                <img class="portfolio__image js-fullscreen-trigger" src="./img/portfolio-eng-1.png" data-miniature-id="1" width="315" height="145" alt="Before and after electroepilation on belly">
+              </picture>
+              <picture class="portfolio__item">
+                <source srcset="./img/portfolio-eng-2.webp" data-miniature-id="2" width="315" height="145">
+                <img class="portfolio__image js-fullscreen-trigger" src="./img/portfolio-eng-2.png" data-miniature-id="2" width="315" height="145" alt="Before and after electroepilation on face">
+              </picture>
+              <picture class="portfolio__item">
+                <source srcset="./img/portfolio-eng-3.webp" data-miniature-id="3" width="315" height="145">
+                <img class="portfolio__image js-fullscreen-trigger" src="./img/portfolio-eng-3.png" data-miniature-id="3" width="315" height="145" alt="Before and after electroepilation on armpit">
+              </picture>
+              <picture class="portfolio__item">
+                <source srcset="./img/portfolio-eng-4.webp" data-miniature-id="4" width="315" height="145">
+                <img class="portfolio__image js-fullscreen-trigger" src="./img/portfolio-eng-4.png" data-miniature-id="4" width="315" height="145" alt="Before and after electroepilation on armpi">
+              </picture>
+              <picture class="portfolio__item">
+                <source srcset="./img/portfolio-eng-5.webp" data-miniature-id="5" width="315" height="145">
+                <img class="portfolio__image js-fullscreen-trigger" src="./img/portfolio-eng-5.png" data-miniature-id="5" width="315" height="145" alt="Before and after electroepilation on belly">
+              </picture>
+              <picture class="portfolio__item">
+                <source srcset="./img/portfolio-eng-6.webp" data-miniature-id="6" width="315" height="145">
+                <img class="portfolio__image js-fullscreen-trigger" src="./img/portfolio-eng-6.png" data-miniature-id="6" width="315" height="145" alt="Before and after electroepilation on face">
+              </picture>
+            </div>
+            <div class="portfolio__gradient"></div>
+            <div class="portfolio__triangle"></div>
+          </div>
+        </div>
+      </section>
+
+          <!-- Полноэкранный показ изображения -->
+    <section class="big-picture  overlay  visually-hidden">
+      <h2 class="big-picture__title  visually-hidden">Просмотр фотографии</h2>
+      <div class="big-picture__preview">
+
+        <!-- Просмотр изображения -->
+        <div class="big-picture__img">
+          <img src="./img/portfolio-eng-1.png" alt="Before and after electroepilation on belly" width="1920" height="960">
+        </div>
+
+        <!-- Кнопка для выхода из полноэкранного просмотра изображения -->
+        <button type="reset" class="big-picture__cancel  cancel" id="picture-cancel">Закрыть</button>
+      </div>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <address class="footer__contacts" id="contacts">
+          <h2 class="footer__title">CONTACTS</h2>
+          <p class="footer__location">BRNO, CZECH REPUBLIC</p>
+          <p class="footer__address">Milady Horákové 5, Brno 602 00</p>
+          <p class="footer__floor">2nd floore</p>
+          <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.0065503389715!2d16.611655300000002!3d49.2004353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712945bfa5a4203%3A0x4e00c7f0b99e4e9b!2zTS4gSG9yw6Frb3bDqSAxOTUyLzUsIDYwMiAwMCBCcm5vLXN0xZllZC3EjGVybsOhIFBvbGU!5e0!3m2!1sru!2scz!4v1702306686404!5m2!1sru!2scz" width="300" height="200" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="footer__logo" href="https://instagram.com/katuska_electro?igshid=NzZlODBkYWE4Ng==">@katuska_electro</a>
+        </address>
+        <a class="footer__reservation-button" href="#reservation">MAKE A RESERVATION</a>
+      </div>
+    </footer>
+ <!-- Шаблон изображения случайного пользователя -->
+  <template id="picture">
+    <a href="#" class="picture">
+      <img class="picture__img" src="" width="315" height="145" alt="Случайная фотография">
+    </a>
+  </template>
+    <script src="./js/big-picture.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/faq.js"></script>
+  </body>
+</html>
