@@ -465,6 +465,7 @@ a {
   }
 }
 .offer__title--zone {
+  font-size: 14px;
   text-transform: lowercase;
   display: block;
   margin-top: -17px;
