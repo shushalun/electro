@@ -74,14 +74,14 @@ a {
   font-family: "Uto-light";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/uto-light.woff2") format("woff2"), url("../fonts/uto-light.woff") format("woff");
+  src: url("../fonts/Uto-Light.woff2") format("woff2"), url("../fonts/Uto-Light.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Uto-light";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/uto-light.woff2") format("woff2"), url("../fonts/uto-light.woff") format("woff");
+  src: url("../fonts/Uto-Light.woff2") format("woff2"), url("../fonts/Uto-Light.woff") format("woff");
   font-display: swap;
 }
 @font-face {
