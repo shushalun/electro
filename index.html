@@ -44,7 +44,7 @@
         <div class="wrapper">
           <h1 class="hero__title">THE ONLY PERMANENT HAIR REMOVAL METHOD</h1>
           <p class="hero__text">/with a guarantee and results</p>
-          <a href="#reservation" class="hero__reservation-button">RESERVATION</a>
+          <a href="https://instagram.com/katuska_electro?igshid=NzZlODBkYWE4Ng==" class="hero__reservation-button">RESERVATION</a>
         </div>
       </section>
       <section class="offer" id="offer">
@@ -111,9 +111,7 @@
             <li class="reasons__item"><span class="reasons__text--bold">Cost:</span> Waxing is cheaper than electro-epilation, but allows you to feel smooth for up to 3 weeks.</li>
           </ul>
             <picture class="reasons__box">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/reasons-wax-desktop.webp 1x, ./img/reasons-wax-desktop@2x.webp 2x" width="350" height="350">
               <source type="image/webp" srcset="./img/reasons-wax.webp" srcset="./img/reasons-wax@2x.webp 2x" width="320" height="320">
-              <source media="(min-width: 1200px)" srcset="./img/reasons-wax-desktop.png 1x, ./img/reasons-wax-desktop@2x.png 2x" width="350" height="350">
               <img class="reasons__img" src="./img/reasons-wax.png" srcset="./img/reasons-wax@2x.png 2x" width="320" height="320" alt="Master Katya do face-electroepilation">
             </picture>
           </div>
@@ -216,16 +214,27 @@
 
           <!-- Полноэкранный показ изображения -->
     <section class="big-picture  overlay  visually-hidden">
-      <h2 class="big-picture__title  visually-hidden">Просмотр фотографии</h2>
-      <div class="big-picture__preview">
+      <div class="wrapper">
+        <h2 class="big-picture__title  visually-hidden">Просмотр фотографии</h2>
+        <div class="big-picture__preview">
 
-        <!-- Просмотр изображения -->
-        <div class="big-picture__img">
-          <img src="./img/portfolio-eng-1.png" alt="Before and after electroepilation on belly" width="1920" height="960">
+          <!-- Просмотр изображения -->
+          <div class="big-picture__img">
+            <img src="./img/portfolio-eng-1.png" alt="Before and after electroepilation on belly" width="1920" height="960">
+          </div>
+
+          <!-- Кнопка для выхода из полноэкранного просмотра изображения -->
+          <button type="reset" class="big-picture__cancel  cancel" id="picture-cancel">Закрыть</button>
+
+          <button class="big-picture__slider-button big-picture__slider-button--prev" type="button">
+            <svg class="big-picture__slider-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="40" fill="none" viewBox="0 0 18 40"><path fill="currentColor" d="M0 2.42 1.86 0l15.4 20-15.4 20L0 37.59 13.53 20 0 2.43Z"/></svg>
+            <span class="visually-hidden">Předchozí foto</span>
+          </button>
+          <button class="big-picture__slider-button big-picture__slider-button--next" type="button">
+            <svg class="big-picture__slider-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="40" fill="none" viewBox="0 0 18 40"><path fill="currentColor" d="M0 2.42 1.86 0l15.4 20-15.4 20L0 37.59 13.53 20 0 2.43Z"/></svg>
+            <span class="visually-hidden">Další foto</span>
+          </button>
         </div>
-
-        <!-- Кнопка для выхода из полноэкранного просмотра изображения -->
-        <button type="reset" class="big-picture__cancel  cancel" id="picture-cancel">Закрыть</button>
       </div>
     </section>
     </main>
@@ -242,7 +251,7 @@
         <a class="footer__reservation-button" href="#reservation">MAKE A RESERVATION</a>
       </div>
     </footer>
- <!-- Шаблон изображения случайного пользователя -->
+ <!-- Шаблон изображения  -->
   <template id="picture">
     <a href="#" class="picture">
       <img class="picture__img" src="" width="315" height="145" alt="Случайная фотография">
