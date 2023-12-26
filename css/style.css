@@ -459,14 +459,15 @@ a {
 }
 @media (min-width: 1200px) {
   .offer__title {
+    font-size: 54px;
     margin: 0 43px 32px 0;
   }
 }
 .offer__title--zone {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: lowercase;
   display: block;
-  margin-top: -17px;
+  margin-top: -13px;
   margin-left: 131px;
 }
 @media (min-width: 660px) {
@@ -480,7 +481,7 @@ a {
   .offer__title--zone {
     font-size: 20px;
     margin-top: -33px;
-    margin-left: 233px;
+    margin-left: 280px;
   }
 }
 .offer__item {
@@ -957,15 +958,15 @@ a {
 }
 @media (min-width: 1024px) {
   .sterilisation__title {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 }
 .sterilisation__title--zone {
   font-size: 14px;
   text-transform: lowercase;
   display: block;
-  margin-top: -17px;
-  margin-left: 216px;
+  margin-top: -12px;
+  margin-left: 214px;
 }
 @media (min-width: 660px) {
   .sterilisation__title--zone {
@@ -974,10 +975,17 @@ a {
     margin-left: 289px;
   }
 }
+@media (min-width: 1024px) {
+  .sterilisation__title--zone {
+    font-size: 20px;
+    margin-top: -24px;
+    margin-left: 291px;
+  }
+}
 @media (min-width: 1200px) {
   .sterilisation__title--zone {
-    margin-top: -32px;
-    margin-left: 362px;
+    margin-top: -38px;
+    margin-left: 370px;
   }
 }
 .sterilisation__list {
