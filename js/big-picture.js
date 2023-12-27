@@ -20,16 +20,26 @@ const updateButtonsState = () => {
 };
 
 const openBigPicture = (index) => {
+  console.log("Открывается большое изображение", index);
   bigPictureImage.src = images[index];
   bigPictureContainer.classList.remove('visually-hidden');
+  bigPictureClose.classList.remove('visually-hidden');
+  bigPictureImage.classList.remove('visually-hidden');
+  prevButton.classList.remove('visually-hidden');
+  nextButton.classList.remove('visually-hidden');
   document.body.classList.add('modal-open');
   document.addEventListener('keydown', onDocumentKeydown);
   updateButtonsState();
 };
 
 const closeBigPicture = () => {
+  console.log("Закрывается большое изображение");
   bigPictureContainer.classList.add('visually-hidden');
-  document.body.classList.remove('modal-open');
+  bigPictureClose.classList.add('visually-hidden');
+  bigPictureImage.classList.add('visually-hidden');
+  prevButton.classList.add('visually-hidden');
+  nextButton.classList.add('visually-hidden');
+  document.body.classList.add('modal-open');
   document.removeEventListener('keydown', onDocumentKeydown);
 };
 
@@ -63,7 +73,10 @@ fullscreenTriggers.forEach((trigger, index) => {
 prevButton.addEventListener('click', () => navigateSlider('prev'));
 nextButton.addEventListener('click', () => navigateSlider('next'));
 
-bigPictureClose.addEventListener('click', closeBigPicture);
+bigPictureClose.addEventListener('click', () => {
+  console.log("Клик на кнопку закрытия");
+  closeBigPicture();
+});
 
 updateButtonsState();
 
