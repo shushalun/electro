@@ -5,7 +5,9 @@ const fullscreenTriggers = document.querySelectorAll('.js-fullscreen-trigger');
 const prevButton = document.querySelector('.big-picture__slider-button--prev');
 const nextButton = document.querySelector('.big-picture__slider-button--next');
 
-const images = Array.from(fullscreenTriggers).map(trigger => trigger.src);
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const images = Array.from(fullscreenTriggers).map(trigger => trigger.src);
 let currentIndex = 0;
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
@@ -39,6 +41,7 @@ const navigateSlider = (direction) => {
   }
 };
 
+
 const onDocumentKeydown = (evt) => {
   if (isEscapeKey(evt)) {
     evt.preventDefault();
@@ -63,3 +66,5 @@ nextButton.addEventListener('click', () => navigateSlider('next'));
 bigPictureClose.addEventListener('click', closeBigPicture);
 
 updateButtonsState();
+
+});
