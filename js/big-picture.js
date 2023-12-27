@@ -5,6 +5,12 @@ const fullscreenTriggers = document.querySelectorAll('.js-fullscreen-trigger');
 const prevButton = document.querySelector('.big-picture__slider-button--prev');
 const nextButton = document.querySelector('.big-picture__slider-button--next');
 
+const preloadImages = (imageUrls) => {
+  imageUrls.forEach(url => {
+    const img = new Image();
+    img.src = url;
+  });
+};
 
 document.addEventListener('DOMContentLoaded', (event) => {
   const images = Array.from(fullscreenTriggers).map(trigger => trigger.src);
@@ -19,10 +25,20 @@ const updateButtonsState = () => {
   nextButton.disabled = currentIndex === images.length - 1;
 };
 
-const openBigPicture = (index) => {
-  bigPictureImage.src = images[index];
-  bigPictureContainer.classList.remove('visually-hidden');
+preloadImages(images);
 
+const openBigPicture = (index) => {
+  // Сначала скрываем изображение и устанавливаем источник
+  bigPictureImage.style.display = 'none';
+  bigPictureImage.src = images[index];
+
+  // Функция, которая будет вызвана после загрузки изображения
+  bigPictureImage.onload = () => {
+    bigPictureImage.style.display = 'block'; // Показываем изображение
+    bigPictureImage.onload = null; // Удаляем обработчик события после выполнения
+  };
+
+  bigPictureContainer.classList.remove('visually-hidden');
   document.body.classList.add('modal-open');
   document.addEventListener('keydown', onDocumentKeydown);
   updateButtonsState();
@@ -65,9 +81,7 @@ fullscreenTriggers.forEach((trigger, index) => {
 prevButton.addEventListener('click', () => navigateSlider('prev'));
 nextButton.addEventListener('click', () => navigateSlider('next'));
 
-bigPictureClose.addEventListener('click', () => {
-  closeBigPicture();
-});
+bigPictureClose.addEventListener('click', closeBigPicture);
 
 updateButtonsState();
 
